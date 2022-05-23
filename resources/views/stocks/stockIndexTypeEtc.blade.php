@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-md-10">
-                <h1>Item List</h1>
+                <h1>Etc.</h1>
 
             </div>
 
@@ -34,9 +34,6 @@
                 </div>
                 <div class="pl-2">
                 <button type="submit" class=" btn-block btn-primary" style='margin-right:16px;'><a href="/stock/stockTypePapers" style="text-decoration:none;"class="text-light"> Sort By Papers </a></button>
-                </div>
-                <div class="pl-2">
-                <button type="submit" class=" btn-block btn-primary" style='margin-right:16px;'><a href="/stock/stockTypeEtc" style="text-decoration:none;"class="text-light"> Sort By Etc</a></button>
                 </div>
                 <div class="pl-2">
                     <button class="btn-md btn-primary"><a style="text-decoration:none;" class="text-light"
@@ -135,7 +132,6 @@
 
         </div>
     </div>
-
 
 
 

@@ -22,16 +22,14 @@
 
         <div class="row">
             <div class="col-md-10">
-                <h1>Item List</h1>
+                <h1>Pen, Pencil, Marker Pens</h1>
 
             </div>
 
             <div class="col-md-2">
             
                 <div class="d-flex justify-content-end">
-                <div class="pl-2">
-                <button type="submit" class=" btn-block btn-primary" style='margin-right:16px;'><a href="/stock/stockTypePen" style="text-decoration:none;"class="text-light"> Sort By Pen,Pencils </a></button>
-                </div>
+                
                 <div class="pl-2">
                 <button type="submit" class=" btn-block btn-primary" style='margin-right:16px;'><a href="/stock/stockTypePapers" style="text-decoration:none;"class="text-light"> Sort By Papers </a></button>
                 </div>
@@ -135,9 +133,6 @@
 
         </div>
     </div>
-
-
-
 
 
 

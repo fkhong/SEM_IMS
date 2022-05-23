@@ -240,8 +240,36 @@ class Controller extends BaseController
     public function stockIndex()
     {
         //Query all item data.
-        $data = Item::all();
+        $data = Item::all();    
+        
         return view('stocks.stockIndex', ['items' => $data]);
+    }
+    
+    public function stockIndexTypePen()
+    {
+        //Query all item data.
+        $data = Item::all()    
+        -> where ('item_type','pen');
+
+        return view('stocks.stockIndexTypePen', ['items' => $data]);
+    }
+
+    public function stockIndexTypePapers()
+    {
+        //Query all item data.
+        $data = Item::all()    
+        -> where ('item_type','paper');
+
+        return view('stocks.stockIndexTypePapers', ['items' => $data]);
+    }
+
+    public function stockIndexTypeEtc()
+    {
+        //Query all item data.
+        $data = Item::all()    
+        -> where ('item_type','etc');
+
+        return view('stocks.stockIndexTypeEtc', ['items' => $data]);
     }
 
 
@@ -249,10 +277,13 @@ class Controller extends BaseController
     {
         //Find row with $item_id from database
         $items = Item::findOrFail($item_id);
-
+        
+        //$items = Item::where($item_type,'pen');
+        //->with ('stocks',$itemType)
         //Query all vendor data
         $vendor = Vendor::all();
-        return view('stocks.stockShow', ['items' => $items], ['vendors' => $vendor]);
+        return view('stocks.stockShow', ['items' => $items], ['vendors' => $vendor])
+        ;
     }
 
 
@@ -297,7 +328,7 @@ class Controller extends BaseController
         $item->item_brand = request('item_brand');
         $item->item_price = request('item_price');
         $item->item_stock_qty = request('item_qty');
-
+        $item->item_type = request('item_type');
 
 
         //Insert Item values

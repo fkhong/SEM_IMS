@@ -91,6 +91,24 @@
                                             placeholder="Enter Item ID" value="{{ $itemid }}" readonly></input>
                                     </td>
                                 </tr>
+
+                                <thead>
+                                    <tr>
+                                        <th>Type of Item</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                    <select id="item_type" name="item_type" required>
+                                            
+                                                <option value="pen" > Pen,Pencil,Marker Pen </option>
+                                                <option value="paper">Paper,Notebook</option>
+                                                <option value="etc">Etc.</option>
+                                            
+                                        </select>
+                                    </td>
+                                    
+                                </tr>
                             </tbody>
                         </table>
 
