@@ -36,6 +36,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('/stock', [Controller::class, 'stockIndex']);
     Route::post('/stock', [Controller::class, 'stockStore']);
     Route::delete('/stock/{item_id}', [Controller::class, 'stockDestroy']);
+    Route::get('/stock/stockTypePen', [Controller::class, 'stockIndexTypePen']);
+    Route::get('/stock/stockTypePapers', [Controller::class, 'stockIndexTypePapers']);
+    Route::get('/stock/stockTypeEtc', [Controller::class, 'stockIndexTypeEtc']);
 
     Route::post('/stock/show', [Controller::class, 'stockUpdate']);
     Route::get('/stock/show/{item_id}', [Controller::class, 'stockShow']);
