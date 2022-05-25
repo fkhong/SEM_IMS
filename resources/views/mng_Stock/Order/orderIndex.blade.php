@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/mng_Stock/mng_Stock.css') }}">
     <script type="text/javascript" src="{{ asset('js/mng_Stock/mng_Stock.js') }}"></script>
 
-    <!--Testing123-->
+    <!--Testing12345-->
     <div class="container pt-4">
         <h2>Manage New Stock</h2>
         <hr>
